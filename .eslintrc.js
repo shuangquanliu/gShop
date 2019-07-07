@@ -48,6 +48,7 @@ module.exports = {
     'no-unused-expressions':'off',
     'no-multi-spaces':'off',
     'no-unused-vars':'off',
-    'camelcase':'off'
+    'camelcase':'off',
+    'func-call-spacing':'off'
   }
 }

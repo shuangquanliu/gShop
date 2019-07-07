@@ -1,22 +1,20 @@
 <template>
-  <div id='title'>
-   <FooterGuide/>
-     <router-view/>
+  <div>
+    <Footer v-if="$route.meta.isShowFooter"/>
+    <router-view/>
   </div>
-
 </template>
 
 <script type="text/ecmascript-6">
-import FooterGuide from './components/FooterGuide/FooterGuide.vue'
+import Footer from './components/Footer/Footer.vue'
   export default {
     components:{
-      FooterGuide
+      Footer
     }
   }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
-  #title
-    color red
+
 
 </style>

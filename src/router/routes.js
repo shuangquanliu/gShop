@@ -1,27 +1,36 @@
-import Msit from '../pages/Msit/Msit.vue'
+import Login from '../pages/Login/Login.vue'
+import Msit  from '../pages/Msit/Msit.vue'
 import Order from '../pages/Order/Order.vue'
 import Profile from '../pages/Profile/Profile.vue'
 import Search from '../pages/Search/Search.vue'
 
-export default [
+export default[
+  {
+    path:'/login',
+    component:Login
+  },
   {
     path:'/msit',
-    component:Msit
+    component:Msit,
+    meta: {isShowFooter:true}
   },
   {
     path:'/order',
-    component:Order
-  },
-  {
-    path:'/profile',
-    component:Profile
+    component:Order,
+    meta: {isShowFooter:true}
   },
   {
     path:'/search',
-    component:Search
+    component:Search,
+    meta: {isShowFooter:true}
+  },
+  {
+    path:'/profile',
+    component:Profile,
+    meta: {isShowFooter:true}
   },
   {
     path:'/',
-    redirect:'/msit'
+    redirect: '/Msit'
   }
 ]
